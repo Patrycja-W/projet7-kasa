@@ -1,9 +1,8 @@
 import {Routes, Route} from "react-router-dom"
-import Accueil from "./composants/accueil/accueil"
-import Ficheslogements from "./composants/ficheslogements/ficheslogements"
-import Erreur from "./composants/erreur/erreur"
-import Apropos from "./composants/apropos/apropos"
-
+import Accueil from "./pages/accueil"
+import Ficheslogements from "./pages/ficheslogements"
+import Erreur from "./pages/erreur"
+import Apropos from "./pages/apropos"
 
 
 function App() {
