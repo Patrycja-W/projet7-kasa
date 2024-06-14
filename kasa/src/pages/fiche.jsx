@@ -5,7 +5,7 @@ import "../styles/fichelogement.scss"
 
 const Fiche = ({ element }) => {
   return (
-    <div className="card">
+    <div className="cardd">
       <img src={element.cover} alt={element.title} className="card-image" />
       <div className="card-content">
         <h2 className="card-title">{element.title}</h2>
