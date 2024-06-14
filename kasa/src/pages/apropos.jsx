@@ -1,14 +1,16 @@
 import React from 'react' 
+import Header from '../composants/header'
+import Footer from '../composants/footer'
 
-export default function Header() {
+
+
+export default function APropos() {
     return <>
   
-   <Propos></Propos>
+  <Header></Header>
+  <Footer></Footer>
+
   
     </>
-  }
-  
-  function Propos () {
-    return <h1>A propos...</h1>
   }
   
