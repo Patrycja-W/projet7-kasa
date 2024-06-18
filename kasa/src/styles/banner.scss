@@ -1,4 +1,5 @@
 .banner {
+    position: relative;
     height: 223px;
     border-radius: 25px;
     color: white;
@@ -6,9 +7,27 @@
     align-content: center;
     text-align: center;
     font-size: 48px;
-    background-image:url("IMG.png");
     background-position: center;
+    font-family: "Montserrat", sans-serif;
+}
+.banner::before {
+position: absolute;
+content: "";
+background-size: cover;
+background-image:url("IMG.png");
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+border-radius: 25px;
+background-position: center;
+filter: brightness(0.5);
 
+}
+
+h1 {
+position: relative;
+    font-size: 48px;
 }
 
 
@@ -23,3 +42,5 @@
         background-image:url("IMGAPROPOS.png");
         background-position: center;
 }
+
+

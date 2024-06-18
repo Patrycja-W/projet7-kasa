@@ -1,4 +1,3 @@
-
 import React from 'react';
 import "../styles/fichelogement.scss"
 
@@ -26,9 +25,7 @@ const Fiche = ({ element }) => {
             </div>
           </div>
         </div>
-        <div className="card-description">
-          <p>{element.description}</p>
-        </div>
+
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 60px;
-
+    font-family: "Montserrat", sans-serif;
     &__logo {
       width: 15%;
     }
@@ -19,6 +19,10 @@
       text-decoration: none;
     }
     &__nav-button:hover {
+      text-decoration: underline;
+    }
+
+    &__nav-button:active {
       text-decoration: underline;
     }
 

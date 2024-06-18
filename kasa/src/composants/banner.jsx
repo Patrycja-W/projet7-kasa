@@ -4,7 +4,7 @@ import "../styles/banner.scss"
 const Banner = () => {
   return (
     <div className="banner">
-        Chez vous, partout et ailleurs
+        <h1>Chez vous, partout et ailleurs</h1>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const gallery = () => {
   return (
     <div className="gallery">
       {data.map((element, index) => (
-        <Card key={index} element={element} />
+        <Card key={element.id} element={element} />
       ))}
     </div>
   );
