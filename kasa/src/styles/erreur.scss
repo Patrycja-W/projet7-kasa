@@ -1,0 +1,42 @@
+.error {
+    color: #FF6060;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    span {
+        font-size: 288px;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 36px;
+        margin: 30px 0;
+        font-weight: 400;
+    }
+
+    a {
+        color: black;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    p {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+@media (min-width: 401px) and (max-width: 550px) {
+    .error span { font-size: 180px; }
+}
+
+@media (max-width: 400px) {
+    .error {      margin: auto 0; }
+    .error span { font-size: 96px; }
+    .error h4 {   font-size: 18px; }
+    .error a {    font-size: 14px; }
+}

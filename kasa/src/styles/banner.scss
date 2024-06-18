@@ -10,6 +10,7 @@
     background-position: center;
     font-family: "Montserrat", sans-serif;
 }
+
 .banner::before {
 position: absolute;
 content: "";
@@ -41,6 +42,8 @@ position: relative;
         font-size: 48px;
         background-image:url("IMGAPROPOS.png");
         background-position: center;
+        filter: brightness(0.6);
+        background-size: cover;
 }
 
 

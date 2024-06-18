@@ -13,7 +13,7 @@ function App() {
   <Routes>
     <Route path="/" element={<Accueil />} />
     <Route path="/fiche/:id" element={<Fiche />} />
-    <Route path="/erreur" element={<Erreur />} />
+    <Route path="*" element={<Erreur />} />
     <Route path="/apropos" element={<Apropos />} />
   </Routes>
   <Footer></Footer>
@@ -22,4 +22,5 @@ function App() {
 
 
 export default App
+
 

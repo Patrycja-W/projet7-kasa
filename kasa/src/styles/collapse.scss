@@ -3,46 +3,21 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-}
 
-.visible.collapse ul {
-    color: #FF6060;
-    padding: 36px 27px 19px 18px;
-    margin: 0;
-    text-align: justify;
-    list-style-type: none;
-}
-
-.collapse__header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    height: 28px;
-    background-color: #FF6060;
-    color: #fff;;
-    font-size: 18px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.collapse__header span {
-    padding-right: auto;
-}
-/* affiche le contenu */
-.visible {
-    display: block;
-}
-
-/* cache le contenu */
-.hidden {
-    display: none;
-}
-
-.chevronValue img {
-    width: 25px;
-    height: 15px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: 28px;
+        background-color: #FF6060;
+        color: #fff;;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        align-items: center;
+        font-weight: 700;
+        cursor: pointer;
+    }
 }
 
 .visible.collapse {
@@ -54,10 +29,35 @@
     margin: 0;
     border-radius: 10px;
     z-index: -1;    /* passe la zone de contenu sous la zone de titre*/
+
+    ul {
+        color: black;
+        padding: 36px 27px 19px 18px;
+        margin: 0;
+        text-align: justify;
+        list-style-type: none;
+    }
 }
+
+.chevronValue img {
+    width: 25px;
+    height: 15px;
+}
+
 
 .equipement-content {
     margin: 0;
+}
+
+
+/* affiche le contenu */
+.visible {
+    display: block;
+}
+
+/* cache le contenu */
+.hidden {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -67,17 +67,13 @@
     }
     .visible.collapse ul {
         font-size: 12px;
-        padding: 23px 7px 5px 11.5px; /* j'ai mis 5px en bas au lieu de 1.3px pour une question ésthétique */
+        padding: 23px 7px 5px 11.5px;
     }
 }
 
 
 
-///////
-
-
-
-
+/////// page a propos
 
 .about {
     display: flex;
