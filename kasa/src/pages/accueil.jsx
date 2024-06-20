@@ -1,6 +1,6 @@
 import React from 'react' 
-import Banner from '../composants/banner'
-import Gallery from '../composants/gallery'
+import Banner from '../composants/Banner'
+import Gallery from '../composants/Gallery'
 
 
 export default function PageAccueil() {

@@ -1,5 +1,5 @@
 import React from 'react' 
-import BannerAPropos from '../composants/bannerAPropos'
+import BannerAPropos from '../composants/BannerAPropos'
 import Collapse from '../composants/Collapse'
 import "../styles/collapse.scss"
 
@@ -7,7 +7,6 @@ import "../styles/collapse.scss"
 
 export default function APropos() {
 
-  // contenu qui sera affiché dans les Collapse
   const fiabilite = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
   const respect   = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
   const service   = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
@@ -17,13 +16,13 @@ export default function APropos() {
   <BannerAPropos></BannerAPropos>
 
   <div className='flex'>
-                <div className='about'>
-                    <div><Collapse title="Fiabilité" content={fiabilite} /></div>
-                    <div><Collapse title="Respect" content={respect} /></div>
-                    <div><Collapse title="Service" content={service} /></div>
-                    <div><Collapse title="Sécurité" content={securite} /></div>
-                </div>
-        </div>
+    <div className='about'>
+        <div><Collapse title="Fiabilité" content={fiabilite} /></div>
+        <div><Collapse title="Respect" content={respect} /></div>
+        <div><Collapse title="Service" content={service} /></div>
+        <div><Collapse title="Sécurité" content={securite} /></div>
+    </div>
+  </div>
 
   
     </>

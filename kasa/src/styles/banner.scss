@@ -15,7 +15,7 @@
 position: absolute;
 content: "";
 background-size: cover;
-background-image:url("IMG.png");
+background-image:url("../Assets/IMG.png");
 top: 0;
 right: 0;
 bottom: 0;
@@ -40,7 +40,7 @@ position: relative;
         align-content: center;
         text-align: center;
         font-size: 48px;
-        background-image:url("IMGAPROPOS.png");
+        background-image:url("../Assets/ImgAPropos.png");
         background-position: center;
         filter: brightness(0.6);
         background-size: cover;
