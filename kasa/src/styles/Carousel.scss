@@ -1,0 +1,71 @@
+.carousel {
+    position: relative;
+    height: 415px;
+    width: 100%;
+
+    button {
+        border: none;
+        background-color: transparent;
+        display: hidden;
+        color: white;
+    }
+
+    &_ChevronGauche {
+        position: absolute;
+        content: "";
+        color: white;
+        inset: 0;
+        top: 40%;
+        cursor: pointer;
+        left: 20px;
+    }
+    &_ChevronDroit {
+        position: absolute;
+        content: "";
+        inset: 0;
+        top: 40%;
+        cursor: pointer;
+        left: calc(100% - 70px);
+    }
+
+    &_compteurImages {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        margin-top: 340px;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+    
+    }
+
+    &_img {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    }
+
+
+
+
+
+@media (max-width: 768px) {
+    .carousel { 
+        height: 255px; 
+    }
+    .classChevronGauche { 
+        height: 30px; 
+    }
+    .classChevronDroit {
+        height: 30px;
+        left: calc(100% - 20px)
+    }
+    .carousel_compteurImages { 
+        top: 70% 
+    }
+}

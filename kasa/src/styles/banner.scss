@@ -9,6 +9,13 @@
     font-size: 48px;
     background-position: center;
     font-family: "Montserrat", sans-serif;
+    @media (max-width: 450px) {
+        margin: 0;
+        height: 111px;
+        text-align: left;
+        padding-left: 15px;
+        border-radius: 10px;
+      }
 }
 
 .banner::before {
@@ -23,12 +30,19 @@ left: 0;
 border-radius: 25px;
 background-position: center;
 filter: brightness(0.5);
+@media (max-width: 450px) {
+    border-radius: 10px;
+  }
 
 }
 
 h1 {
 position: relative;
     font-size: 48px;
+    @media (max-width: 450px) {
+        font-size: 24px;
+        width: 225px;
+      }
 }
 
 
@@ -44,6 +58,11 @@ position: relative;
         background-position: center;
         filter: brightness(0.6);
         background-size: cover;
+        @media (max-width: 450px) {
+            margin: 0;
+            height: 111px;
+            border-radius: 10px;
+          }
 }
 
 

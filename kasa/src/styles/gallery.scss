@@ -5,4 +5,11 @@
     flex-wrap: wrap;
     border-radius: 25px;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (max-width: 450px) {
+        margin: 0;
+        background-color: white;
+        padding-top: 0;
+      }
 }

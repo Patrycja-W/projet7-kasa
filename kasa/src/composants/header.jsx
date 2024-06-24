@@ -6,8 +6,8 @@ import Logo from "../Assets/Logo.png"
 const Header = () => {
   return (
     <header className="header">
-      <Link to ="/"  className="header__logo" >
-        <img src={Logo} alt="logo kasa"/>
+      <Link to ="/">
+        <img src={Logo} alt="logo kasa"   className="header__logo" />
       </Link>
       <nav className="header__nav">
         <Link to ="/" className="header__nav-button" >Accueil</Link>
