@@ -4,12 +4,14 @@
     align-items: center;
     padding: 30px 60px;
     font-family: "Montserrat", sans-serif;
-    @media (max-width: 450px) {
-      padding: 20px 10px;
+    @media (max-width: 768px) {
+      padding: 20px 0px;
+      margin-left: 15px;
+      margin-right: 15px;
     }
 
     &__logo {
-      @media (max-width: 450px) {
+      @media (max-width: 768px) {
         width: 145px;
       }
       @media (max-width: 340px) {
@@ -20,7 +22,7 @@
     &__nav {
       display: flex;
       gap: 65px;
-      @media (max-width: 450px) {
+      @media (max-width: 768px) {
         gap: 35px;
       }
     }
@@ -32,6 +34,9 @@
       @media (max-width: 450px) {
         font-size: 12px;
         text-transform: uppercase;
+      }
+      @media (min-width: 451px) and (max-width: 768px) {
+        font-size: 20px;
       }
     }
     &__nav-button:hover {

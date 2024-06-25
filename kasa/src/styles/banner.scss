@@ -9,11 +9,10 @@
     font-size: 48px;
     background-position: center;
     font-family: "Montserrat", sans-serif;
-    @media (max-width: 450px) {
-        margin: 0;
+    @media (max-width: 768px) {
+      margin: 0px 15px 10px;
         height: 111px;
         text-align: left;
-        padding-left: 15px;
         border-radius: 10px;
       }
 }
@@ -30,7 +29,7 @@ left: 0;
 border-radius: 25px;
 background-position: center;
 filter: brightness(0.5);
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     border-radius: 10px;
   }
 
@@ -39,9 +38,10 @@ filter: brightness(0.5);
 h1 {
 position: relative;
     font-size: 48px;
-    @media (max-width: 450px) {
+    @media (max-width: 768px) {
         font-size: 24px;
         width: 225px;
+        padding-left: 15px;
       }
 }
 
@@ -58,8 +58,8 @@ position: relative;
         background-position: center;
         filter: brightness(0.6);
         background-size: cover;
-        @media (max-width: 450px) {
-            margin: 0;
+        @media (max-width: 768px) {
+          margin: 0px 15px 10px;
             height: 111px;
             border-radius: 10px;
           }
