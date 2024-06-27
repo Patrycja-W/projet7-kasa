@@ -137,6 +137,14 @@
     &-etoiles {
         display: flex;
         gap: 10px;
+        justify-content: end;
+        @media (max-width: 768px) {
+              align-items: center;
+              justify-content: left;
+    
+        }
+        
+        
     }
 }
 
@@ -173,21 +181,4 @@
         display: block; 
       }
 }
-
-
-
-
-
-/** média query */
-
-@media (max-width: 768px) {
-
-    .ficheLogement_photo-etoiles {
-        align-items: center;
-        justify-content: left;
-    }
-
-
-}
-
 
