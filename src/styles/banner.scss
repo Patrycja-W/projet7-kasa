@@ -1,0 +1,68 @@
+.banner {
+    position: relative;
+    height: 223px;
+    border-radius: 25px;
+    color: white;
+    margin: 30px 60px;
+    align-content: center;
+    text-align: center;
+    font-size: 48px;
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    @media (max-width: 768px) {
+      margin: 0px 15px 10px;
+        height: 111px;
+        text-align: left;
+        border-radius: 10px;
+      }
+}
+
+.banner::before {
+position: absolute;
+content: "";
+background-size: cover;
+background-image:url("../Assets/IMG.png");
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+border-radius: 25px;
+background-position: center;
+filter: brightness(0.5);
+@media (max-width: 768px) {
+    border-radius: 10px;
+  }
+
+}
+
+h1 {
+position: relative;
+    font-size: 48px;
+    @media (max-width: 768px) {
+        font-size: 24px;
+        width: 225px;
+        padding-left: 15px;
+      }
+}
+
+
+.banner_a_propos {
+        height: 223px;
+        border-radius: 25px;
+        color: white;
+        margin: 30px 60px;
+        align-content: center;
+        text-align: center;
+        font-size: 48px;
+        background-image:url("../Assets/ImgAPropos.png");
+        background-position: center;
+        filter: brightness(0.6);
+        background-size: cover;
+        @media (max-width: 768px) {
+          margin: 0px 15px 10px;
+            height: 111px;
+            border-radius: 10px;
+          }
+}
+
+
