@@ -1,8 +1,12 @@
 
 import React, { useState } from 'react'
-import chevronGauche from "../Assets/ChevronGauche.png"
-import chevronDroit from "../Assets/ChevronDroit.png"
 import "../styles/carousel.scss"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+
 
 
 function Carousel({pictures}) { 
@@ -21,10 +25,10 @@ function Carousel({pictures}) {
             {totalPictures > 0 && ( 
                 <div> 
                     <button onClick={() => setIndex(index - 1)}>{index}
-                        <img src={chevronGauche} className='carousel_ChevronGauche' alt={'flèche gauche pour changer de photo '+index} />
+                    <FontAwesomeIcon icon={faChevronLeft} alt={+index} className='carousel_ChevronGauche'/>
                     </button>
                     <button onClick={() => setIndex(index + 1)}>{index}
-                        <img src={chevronDroit} className='carousel_ChevronDroit' alt={'flèche droite pour changer de photo '+index} />
+                    <FontAwesomeIcon icon={faChevronRight} alt={+index}className='carousel_ChevronDroit' />
                     </button>
                 </div>
             )}

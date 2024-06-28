@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
-import chevronUp from "../Assets/ChevronUp.png"
-import chevronDown from "../Assets/ChevronDown.png"
+
 import "../styles/collapse.scss"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -14,15 +17,15 @@ function Collapse({title, content}) {
     }
 
     const collapseContent = (contentVisible ? "visible" : "hidden") + " collapse"
-    const collapseChevron = (contentVisible ? chevronUp : chevronDown)
+    const collapseChevron = (contentVisible ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />)
 
     return (
         <div className='collapse'>
 
             <div className='collapse__header' onClick={affContent}>
                 <span>{title}</span>
-                <div className="chevronValue">
-                    <img src={collapseChevron} alt=""/>
+                <div>
+                    {collapseChevron}
                 </div>
             </div>
 

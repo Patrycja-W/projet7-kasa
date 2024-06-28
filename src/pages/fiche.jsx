@@ -52,7 +52,7 @@ function Fiche() {
                       {
                           arrayStars.map(element => {
                               const nbreEtoiles = parseInt(record.rating)
-                              return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>                  <FontAwesomeIcon icon={faStar} /></span>)
+                              return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}><FontAwesomeIcon icon={faStar} /></span>)
                           })
                       }
                   </div>
