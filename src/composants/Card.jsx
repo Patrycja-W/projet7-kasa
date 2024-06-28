@@ -3,7 +3,7 @@ import "../styles/card.scss"
 import {Link} from "react-router-dom"
 
 
-const Card = ({ element }) => {
+function Card ({ element }) {
     return (
       <Link to={`/fiche/${element.id}`} className="card">
         <img src={element.cover} alt={element.title} className="card_image" />

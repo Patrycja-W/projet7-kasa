@@ -3,7 +3,7 @@ import Banner from '../composants/Banner'
 import Gallery from '../composants/Gallery'
 
 
-export default function PageAccueil() {
+function PageAccueil() {
     return <>
   
   <Banner></Banner>
@@ -11,4 +11,4 @@ export default function PageAccueil() {
 
     </>
   }
-  
+  export default PageAccueil;

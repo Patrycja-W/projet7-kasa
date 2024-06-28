@@ -64,4 +64,4 @@ function Fiche() {
     )
 }
 
-export default Fiche
+export default Fiche;

@@ -3,7 +3,7 @@ import "../styles/header.scss"
 import {Link} from "react-router-dom"
 import Logo from "../Assets/Logo.png"
 
-const Header = () => {
+function Header () {
   return (
     <header className="header">
       <Link to ="/">

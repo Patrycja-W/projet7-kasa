@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/footer.scss"
 import LogoFooter from "../Assets/LogoFooter.png"
 
-const Footer = () => {
+function Footer () {
   return (
     <div className="footer">
         <img className="footer_logo" src={LogoFooter} alt="logo footer"  />

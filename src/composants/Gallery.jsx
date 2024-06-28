@@ -3,7 +3,7 @@ import data from "../data/data.json";
 import Card from './Card';
 import "../styles/gallery.scss"
 
-const gallery = () => {
+function Gallery () {
   return (
     <div className="gallery">
       {data.map((element, index) => (
@@ -13,4 +13,4 @@ const gallery = () => {
   );
 };
 
-export default gallery;
+export default Gallery;

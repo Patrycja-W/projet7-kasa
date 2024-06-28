@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import chevronGauche from "../Assets/ChevronGauche.png"
 import chevronDroit from "../Assets/ChevronDroit.png"
-import "../styles/Carousel.scss"
+import "../styles/carousel.scss"
 
 
 function Carousel({pictures}) { 
@@ -40,4 +40,4 @@ function Carousel({pictures}) {
     )
 }
 
-export default Carousel
+export default Carousel;
