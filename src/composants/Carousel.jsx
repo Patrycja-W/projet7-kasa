@@ -12,17 +12,17 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 function Carousel({pictures}) { 
 
     const [index, setIndex] = useState(0)  
-    const totalPictures = pictures.length-1 
+    const totalPhotos = pictures.length-1 
 
-    if (index < 0) setIndex(totalPictures) 
-    if (index > totalPictures) setIndex(0)  
+    if (index < 0) setIndex(totalPhotos) 
+    if (index > totalPhotos) setIndex(0)  
     
     return(
         <div className='carousel'>
 
                 <img src={pictures[index]} className="carousel_img" key={"car-"+index} alt={"photo "+index} />
 
-            {totalPictures > 0 && ( 
+            {totalPhotos > 0 && ( 
                 <div> 
                     <button onClick={() => setIndex(index - 1)}>{index}
                     <FontAwesomeIcon icon={faChevronLeft} alt={+index} className='carousel_ChevronGauche'/>
@@ -32,11 +32,11 @@ function Carousel({pictures}) {
                     </button>
                 </div>
             )}
-            {totalPictures > 0 && (
+            {totalPhotos > 0 && (
 
                 <div className='div-compteur'> 
                     <p className='carousel_compteurImages'>
-                        {index+1}/{totalPictures+1}
+                        {index+1}/{totalPhotos+1}
                     </p>
                 </div>
             )}

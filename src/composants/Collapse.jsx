@@ -10,26 +10,26 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function Collapse({title, content}) {
 
-    const [contentVisible, setContentVisible] = useState(false)
+    const [contenuVisible, setContentVisible] = useState(false)
 
-    const affContent = () => { 
-        setContentVisible(!contentVisible) 
+    const afficherContenu = () => { 
+        setContentVisible(!contenuVisible) 
     }
 
-    const collapseContent = (contentVisible ? "visible" : "hidden") + " collapse"
-    const collapseChevron = (contentVisible ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />)
+    const collapseContenu = (contenuVisible ? "visible" : "hidden") + " collapse"
+    const collapseChevron = (contenuVisible ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />)
 
     return (
         <div className='collapse'>
 
-            <div className='collapse__header' onClick={affContent}>
+            <div className='collapse__header' onClick={afficherContenu}>
                 <span>{title}</span>
                 <div>
                     {collapseChevron}
                 </div>
             </div>
 
-            <div className={collapseContent}>
+            <div className={collapseContenu}>
                 <ul>{content}</ul>
             </div>
         </div>

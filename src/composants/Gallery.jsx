@@ -6,7 +6,7 @@ import "../styles/gallery.scss"
 function Gallery () {
   return (
     <div className="gallery">
-      {data.map((element, index) => (
+      {data.map((element) => (
         <Card key={element.id} element={element} />
       ))}
     </div>

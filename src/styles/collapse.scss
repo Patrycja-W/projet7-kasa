@@ -17,6 +17,10 @@
         align-items: center;
         font-weight: 700;
         cursor: pointer;
+        @media (max-width: 768px) {
+                font-size: 13px;
+                height: 20px
+        }
     }
 }
 
@@ -36,6 +40,11 @@
         margin: 0;
         text-align: justify;
         list-style-type: none;
+        @media (max-width: 768px) {
+                font-size: 12px;
+                padding: 23px 7px 5px 11.5px;
+        }
+        
     }
 }
 
@@ -49,18 +58,6 @@
 .hidden {
     display: none;
 }
-
-@media (max-width: 768px) {
-    .collapse__header {
-        font-size: 13px;
-        height: 20px;
-    }
-    .visible.collapse ul {
-        font-size: 12px;
-        padding: 23px 7px 5px 11.5px;
-    }
-}
-
 
 
 /////// page a propos

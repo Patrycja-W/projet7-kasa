@@ -12,31 +12,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
-const arrayStars = [1, 2, 3, 4, 5]
+const tableauEtoiles = [1, 2, 3, 4, 5]
 
 function Fiche() {
 
     const {id} = useParams();
     
-    const record = Data.find(element => element.id === id)
+    const enregistrement = Data.find(element => element.id === id)
 
-    if (!record) return(<Erreur />)
+    if (!enregistrement) return(<Erreur />)
 
-    const equipements = record.equipments.map((element, index) => (
-          <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
+    const equipements = enregistrement.equipments.map((element, index) => (
+          <li key={"equip-"+index.toString()}>{element}</li>
         ))
     
     return (
       <div className='logement'>
 
-          <Carousel pictures={record.pictures}/>
+          <Carousel pictures={enregistrement.pictures}/>
 
           <div className='ficheLogement'>
               <div>
-                  <h1>{record.title}</h1>
-                  <h4>{record.location}</h4>
+                  <h1>{enregistrement.title}</h1>
+                  <h4>{enregistrement.location}</h4>
                   <div className='ficheLogement_description'>
-                      { record.tags.map((element, index) => {
+                      { enregistrement.tags.map((element, index) => {
                           return(<p className='ficheLogement_description-tags' key={"tags_"+index}>{element}</p>)
                       })}
                   </div>
@@ -44,15 +44,15 @@ function Fiche() {
 
               <div className='ficheLogement_photo'>
                   <div className='ficheLogement_photo-nom'>
-                      <p>{record.host.name}</p>
-                      <img src={record.host.picture} alt={record.title} />
+                      <p>{enregistrement.host.name}</p>
+                      <img src={enregistrement.host.picture} alt={enregistrement.title} />
                   </div>
                   
                   <div className='ficheLogement_photo-etoiles'>
                       {
-                          arrayStars.map(element => {
-                              const nbreEtoiles = parseInt(record.rating)
-                              return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}><FontAwesomeIcon icon={faStar} /></span>)
+                          tableauEtoiles.map(element => {
+                              const nombreEtoiles = parseInt(enregistrement.rating)
+                              return(<span key={"star-"+element} className={element <= nombreEtoiles ? 'span1' : 'span2'}><FontAwesomeIcon icon={faStar} /></span>)
                           })
                       }
                   </div>
@@ -60,7 +60,7 @@ function Fiche() {
           </div>
 
           <div className='collapseLogement'>
-              <Collapse title="Description" content={record.description} />
+              <Collapse title="Description" content={enregistrement.description} />
               <Collapse title="Equipements" content={equipements} />
           </div>
   </div>
