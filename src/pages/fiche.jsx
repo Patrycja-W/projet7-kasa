@@ -15,13 +15,16 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 const tableauEtoiles = [1, 2, 3, 4, 5]
 
 function Fiche() {
-
+    //récupère l'id
     const {id} = useParams();
     
+    //cherche l'id dans data
     const enregistrement = Data.find(element => element.id === id)
 
+    //redirection vers la page d'erreur si url modifié
     if (!enregistrement) return(<Erreur />)
 
+    //récupère la liste des équipements
     const equipements = enregistrement.equipments.map((element, index) => (
           <li key={"equip-"+index.toString()}>{element}</li>
         ))
@@ -29,8 +32,10 @@ function Fiche() {
     return (
       <div className='logement'>
 
+        {/* carousel */}
           <Carousel pictures={enregistrement.pictures}/>
 
+        {/* titre, emplacement et tags */}
           <div className='ficheLogement'>
               <div>
                   <h1>{enregistrement.title}</h1>
@@ -42,12 +47,14 @@ function Fiche() {
                   </div>
               </div>
 
+            {/* nom du propriétaire et sa photo */}
               <div className='ficheLogement_photo'>
                   <div className='ficheLogement_photo-nom'>
                       <p>{enregistrement.host.name}</p>
                       <img src={enregistrement.host.picture} alt={enregistrement.title} />
                   </div>
                   
+                {/* les étoiles */}
                   <div className='ficheLogement_photo-etoiles'>
                       {
                           tableauEtoiles.map(element => {
@@ -59,6 +66,7 @@ function Fiche() {
               </div>
           </div>
 
+        {/* description et équipements */}
           <div className='collapseLogement'>
               <Collapse title="Description" content={enregistrement.description} />
               <Collapse title="Equipements" content={equipements} />
