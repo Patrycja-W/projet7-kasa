@@ -20,7 +20,7 @@ function Carousel({pictures}) {
     return(
         <div className='carousel'>
 
-                <img src={pictures[index]} className="carousel_img" key={"car-"+index} alt={"photo "+index} />
+                <img src={pictures[index]} className="carousel_img" key={"photo-"+index} alt={"photo"+index} />
 
             {totalPhotos > 0 && ( 
                 <div> 

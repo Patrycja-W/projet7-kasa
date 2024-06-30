@@ -37,7 +37,7 @@ function Fiche() {
                   <h4>{enregistrement.location}</h4>
                   <div className='ficheLogement_description'>
                       { enregistrement.tags.map((element, index) => {
-                          return(<p className='ficheLogement_description-tags' key={"tags_"+index}>{element}</p>)
+                          return(<p className='ficheLogement_description-tags' key={"tag-"+index}>{element}</p>)
                       })}
                   </div>
               </div>
@@ -52,7 +52,7 @@ function Fiche() {
                       {
                           tableauEtoiles.map(element => {
                               const nombreEtoiles = parseInt(enregistrement.rating)
-                              return(<span key={"star-"+element} className={element <= nombreEtoiles ? 'span1' : 'span2'}><FontAwesomeIcon icon={faStar} /></span>)
+                              return(<span key={"etoile-"+element} className={element <= nombreEtoiles ? 'span1' : 'span2'}><FontAwesomeIcon icon={faStar} /></span>)
                           })
                       }
                   </div>
