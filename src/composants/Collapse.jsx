@@ -10,10 +10,10 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function Collapse({title, content}) {
 
-    const [contenuVisible, setContentVisible] = useState(false)
+    const [contenuVisible, setContenuVisible] = useState(false)
 
     const afficherContenu = () => { 
-        setContentVisible(!contenuVisible) 
+        setContenuVisible(!contenuVisible) 
     }
 
     const collapseContenu = (contenuVisible ? "visible" : "hidden") + " collapse"
