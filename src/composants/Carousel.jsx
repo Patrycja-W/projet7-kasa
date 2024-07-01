@@ -25,10 +25,10 @@ function Carousel({pictures}) {
             {totalPhotos > 0 && ( 
                 <div> 
                     <button onClick={() => setIndex(index - 1)}>{index}
-                    <FontAwesomeIcon icon={faChevronLeft} alt={+index} className='carousel_ChevronGauche'/>
+                    <FontAwesomeIcon icon={faChevronLeft} className='carousel_ChevronGauche'/>
                     </button>
                     <button onClick={() => setIndex(index + 1)}>{index}
-                    <FontAwesomeIcon icon={faChevronRight} alt={+index}className='carousel_ChevronDroit' />
+                    <FontAwesomeIcon icon={faChevronRight} className='carousel_ChevronDroit' />
                     </button>
                 </div>
             )}
