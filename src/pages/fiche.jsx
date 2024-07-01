@@ -19,13 +19,13 @@ function Fiche() {
     const {id} = useParams();
     
     //cherche l'id dans data
-    const enregistrement = Data.find(element => element.id === id)
+    const logement = Data.find(element => element.id === id)
 
     //redirection vers la page d'erreur si url modifié
-    if (!enregistrement) return(<Erreur />)
+    if (!logement) return(<Erreur />)
 
     //récupère la liste des équipements
-    const equipements = enregistrement.equipments.map((element, index) => (
+    const equipements = logement.equipments.map((element, index) => (
           <li key={"equip-"+index.toString()}>{element}</li>
         ))
     
@@ -33,15 +33,15 @@ function Fiche() {
       <div className='logement'>
 
         {/* carousel */}
-          <Carousel pictures={enregistrement.pictures}/>
+          <Carousel pictures={logement.pictures}/>
 
         {/* titre, emplacement et tags */}
           <div className='ficheLogement'>
               <div>
-                  <h1>{enregistrement.title}</h1>
-                  <h4>{enregistrement.location}</h4>
+                  <h1>{logement.title}</h1>
+                  <h4>{logement.location}</h4>
                   <div className='ficheLogement_description'>
-                      { enregistrement.tags.map((element, index) => {
+                      { logement.tags.map((element, index) => {
                           return(<p className='ficheLogement_description-tags' key={"tag-"+index}>{element}</p>)
                       })}
                   </div>
@@ -50,15 +50,15 @@ function Fiche() {
             {/* nom du propriétaire et sa photo */}
               <div className='ficheLogement_photo'>
                   <div className='ficheLogement_photo-nom'>
-                      <p>{enregistrement.host.name}</p>
-                      <img src={enregistrement.host.picture} alt={enregistrement.title} />
+                      <p>{logement.host.name}</p>
+                      <img src={logement.host.picture} alt={logement.title} />
                   </div>
                   
                 {/* les étoiles */}
                   <div className='ficheLogement_photo-etoiles'>
                       {
                           tableauEtoiles.map(element => {
-                              const nombreEtoiles = parseInt(enregistrement.rating)
+                              const nombreEtoiles = parseInt(logement.rating)
                               return(<span key={"etoile-"+element} className={element <= nombreEtoiles ? 'span1' : 'span2'}><FontAwesomeIcon icon={faStar} /></span>)
                           })
                       }
@@ -68,7 +68,7 @@ function Fiche() {
 
         {/* description et équipements */}
           <div className='collapseLogement'>
-              <Collapse title="Description" content={enregistrement.description} />
+              <Collapse title="Description" content={logement.description} />
               <Collapse title="Equipements" content={equipements} />
           </div>
   </div>
