@@ -3,12 +3,12 @@ import Banner from '../composants/Banner'
 import Gallery from '../composants/Gallery'
 
 
-function PageAccueil() {
+function Accueil() {
     return <>
   
-  <Banner></Banner>
+  <Banner image="/assets/IMG.png" texte="Chez vous, partout et ailleurs" ></Banner>
   <Gallery></Gallery>
 
     </>
   }
-  export default PageAccueil;
+  export default Accueil;

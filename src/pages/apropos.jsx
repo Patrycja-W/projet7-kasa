@@ -1,5 +1,5 @@
 import React from 'react' 
-import BannerAPropos from '../composants/BannerAPropos'
+import Banner from '../composants/Banner'
 import Collapse from '../composants/Collapse'
 import "../styles/collapse.scss"
 
@@ -13,7 +13,7 @@ function APropos() {
   const securite  = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
     return <>
 
-  <BannerAPropos></BannerAPropos>
+<Banner image="/assets/ImgAPropos.png"></Banner>
 
   <div className='flex'>
     <div className='about'>

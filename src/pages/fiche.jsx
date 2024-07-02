@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-import Erreur from "./erreur"
+import Erreur from "./Erreur"
 
 import "../styles/fiche.scss"
 import Data from "../data/data.json"

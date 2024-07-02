@@ -1,9 +1,9 @@
 import {Routes, Route} from "react-router-dom"
 import Header from './composants/Header'
-import Accueil from "./pages/accueil"
-import Fiche from "./pages/fiche"
-import Erreur from "./pages/erreur"
-import Apropos from "./pages/apropos"
+import Accueil from './pages/accueil'
+import Fiche from "./pages/Fiche"
+import Erreur from "./pages/Erreur"
+import Apropos from "./pages/APropos"
 import Footer from './composants/Footer'
 
 
