@@ -1,6 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 import Header from './composants/Header'
-import Accueil from './pages/accueil'
+import Accueil from './pages/accueill'
 import Fiche from "./pages/Fiche"
 import Erreur from "./pages/Erreur"
 import Apropos from "./pages/APropos"
