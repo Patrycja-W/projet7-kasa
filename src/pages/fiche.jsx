@@ -26,7 +26,7 @@ function Fiche() {
 
     //récupère la liste des équipements
     const equipements = logement.equipments.map((element, index) => (
-          <li key={"equip-"+index.toString()}>{element}</li>
+          <li key={"equip-"+index}>{element}</li>
         ))
     
     return (
