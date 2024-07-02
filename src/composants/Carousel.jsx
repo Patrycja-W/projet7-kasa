@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import "../styles/carousel.scss"
+import "../styles/carrousel.scss"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
