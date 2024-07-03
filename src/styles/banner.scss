@@ -7,43 +7,46 @@
   align-content: center;
   text-align: center;
   font-size: 48px;
-  content: "";
   background-size: cover;
-  border-radius: 25px;
   background-position: center;
   filter: brightness(0.5);
-  
+
   @media (max-width: 768px) {
-      border-radius: 10px;
-    }
+    border-radius: 10px;
+  }
 
   @media (max-width: 768px) {
     margin: 0px 15px 10px;
-      height: 111px;
-      text-align: left;
-      border-radius: 10px;
-    }
+    height: 111px;
+    text-align: left;
+    border-radius: 10px;
+  }
 }
 
 .bannerRoot {
   position: relative;
+
 }
 
 .bannerRoot h1 {
   position: absolute;
   color: white;
-  top: 45px;
-  left: 20%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
+
+
   @media (max-width: 768px) {
-      font-size: 24px;
-      width: 225px;
-      padding-left: 15px;
-      top: 10px;
-      left: 5%;
-    }
-    @media (min-width: 769px) and (max-width: 1024px) {
-      width: 60%;
-    }
+    font-size: 24px;
+
+  }
+  @media (max-width: 460px) {
+    width: 235px;
+  }
+
+  @media (min-width: 451px) and (max-width: 1500px) {
+    width: 55%;
+  }
 }
